@@ -126,12 +126,7 @@ class SiteController extends Controller
      */
     public function actionLogout()
     {
-        //$fileCache = \Yii::$app->getCache();
-        //$fileCache->flush();
-
-       // Delete all the files in /var/lib/php/sessions
-       // $this->destroyAllPhpSessionFiles();
-       //Yii::$app->response->cookies->remove('PHPSESSID');
+        
        Yii::$app->session->close();
         Yii::$app->user->logout();
         return $this->redirect('/basic/web/site/login');
