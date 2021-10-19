@@ -100,6 +100,7 @@ class SiteController extends Controller
         ]);
 
     }
+    //admin login
     public function actionLogin2()
     {
         if( !Yii::$app->user->isGuest){
