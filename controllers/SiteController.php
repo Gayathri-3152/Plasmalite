@@ -41,38 +41,8 @@ class SiteController extends Controller
             ],
         ];
     }
-    /*public function behaviors()
-    {
-        return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'only' => ['login','signup','logout'],
-                'user'=>'admin',
-                'rules' => [
-                    [
-                        'actions' => ['login','signup'],
-                        'allow' => true,
-                        'roles' => ['?'],
-                    ],
-                    [
-                        'actions' => ['error'],
-                        'allow' => true,
-                        'actions' => ['logout'],                    
-                        'roles' => ['@'],
     
-                    ],
-                ],
-            ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post'],
-                    'login2' => ['post','get'],  
-                ],
-            ],
-        ];
-    }
-   */
+    
 
     /**
      * {@inheritdoc}
